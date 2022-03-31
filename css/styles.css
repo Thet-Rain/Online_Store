@@ -1,0 +1,235 @@
+#title
+{
+  background-color: black;
+}
+
+
+h1
+{
+  font-family: 'Montserrat-black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+body
+{
+  font-family: 'Montserrat-black', sans-serif;
+}
+
+h2
+{
+  font-family: 'Montserrat-bold';
+  line-height: 4rem;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+h3
+{
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+p
+{
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: bold;
+}
+
+
+
+
+.container-fluid
+{
+  padding: 4% 15% 7%;
+}
+
+.margin-top
+{
+  margin-top: 50px;
+}
+.padded
+{
+  padding-top: 50px;
+}
+
+
+/*title section*/
+
+
+.title
+{
+  color: white;
+}
+
+.title-img
+{
+  position : relative;
+  width:100%;
+  margin-left: 25px;
+}
+
+.navbar
+{
+  padding: 0;
+}
+
+.navbar-brand
+{
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item
+{
+  padding: 0 15px;
+}
+
+.nav-link
+{
+  font-size: 1.2rem;
+  font-family:  "Montserrat-Light";
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+/*Product corousel section fdsfd*/
+
+#product-overview
+{
+  background-color: white;
+  color: black;
+  position:relative;
+  z-index: 2;
+}
+
+.carousel-item
+{
+  padding: 7% 15%;
+}
+
+.product-img
+{
+  width: 70%;
+  position: absolute;
+}
+
+/*promotion section*/
+#promotion
+{
+  background-color: black;
+  font-family: cursive;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+
+/*today's deals section*/
+
+#today-deals
+{
+  background-color: white;
+  padding: 3% 7%;
+
+}
+
+.best-deal-container-1
+{
+  height: 600px;
+}
+
+.best-deal-container-2
+{
+  height: 300px;
+}
+
+.best-deal-img-1
+{
+  height: 300px;
+}
+.best-deal-img-2
+{
+  height: 150px;
+}
+.text-decoration-crossed
+{
+  text-decoration: line-through;
+}
+/* Fotter Section*/
+
+#footer
+{
+  text-align: center;
+  padding-top: 2% ;
+  padding-bottom: 2%;
+  background-color: grey;
+}
+#footer p
+{
+  color:black;
+}
+
+.footer-icon
+{
+  margin: 10px;
+}
+
+/*CSS For animation*/
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+/* For screen smaller than 1084 */
+@media (max-width : 1200px)
+{
+  .title-img
+  {
+    position: static;
+    display: block;
+  }
+
+  #title
+  {
+    text-align: center;
+  }
+
+  .product-img
+  {
+    position: relative;
+    display: block;
+  }
+}
+
+@media (max-width : 990px)
+{
+  .best-deal-img-2
+  {
+    height: 300px;
+  }
+
+  .best-deal-container-2
+  {
+    height: 600px;
+  }
+}
