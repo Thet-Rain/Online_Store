@@ -121,6 +121,15 @@ p
   position: absolute;
 }
 
+/*Product List Box*/
+
+.list-product-img
+{
+  height: 300px;
+}
+
+.list
+
 /*promotion section*/
 #promotion
 {
