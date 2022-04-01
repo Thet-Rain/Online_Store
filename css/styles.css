@@ -121,14 +121,6 @@ p
   position: absolute;
 }
 
-/*Product List Box*/
-
-.list-product-img
-{
-  height: 300px;
-}
-
-.list
 
 /*promotion section*/
 #promotion
@@ -173,6 +165,33 @@ p
 }
 /* Fotter Section*/
 
+/*List HTML PAGE CSS*/
+#list-items
+{
+  background-color:white;
+}
+
+.list-box
+{
+  padding: 50px;
+  margin-top: 6%;
+}
+
+.list-description
+{
+
+}
+
+.align-bottom
+{
+  position:absolute;
+  bottom: 5px;
+}
+
+.list-product-img
+{
+  height: 300px;
+}
 #footer
 {
   text-align: center;
@@ -230,7 +249,7 @@ p
   }
 }
 
-@media (max-width : 990px)
+@media (max-width : 993px)
 {
   .best-deal-img-2
   {
@@ -241,4 +260,10 @@ p
   {
     height: 600px;
   }
+
+  .align-bottom
+  {
+    position:relative;
+  }
+
 }
