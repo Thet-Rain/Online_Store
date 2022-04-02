@@ -15,7 +15,7 @@ for ( var i = 0; i < product5.length; i++)
         "<div>"+
         "<h6>List Price:" + product5[i].listPrice +"</h6>"+
         "<h6 style='color:red; font-weight:bold;'>Your Price:" + product5[i].yourPrice +"</h6>"+
-        "<button type='button' class='btn btn-primary shopping-cart'>Add to Cart</button>"+
+        "<button type='button' class='btn btn-primary shopping-cart' value = '"+  i + "' >Add to Cart</button>"+
         "</div>"+
       "</div>"+
     "</div>"+
