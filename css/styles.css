@@ -291,6 +291,18 @@ a:hover
   {
     visibility:hidden;
   }
+
+  .nav-link
+  {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .navbar-fixed-top
+  {
+    max-height: 50%;
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width : 993px)
