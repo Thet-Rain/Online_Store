@@ -20,9 +20,9 @@
 </head>
 
 <body>
-<!-- Nav Bar -->
+  <!-- Nav Bar -->
   <nav class="navbar navbar-light navbar-expand-xl navbar-fixed-top" style="background-color: #04293A;">
-    <a class="navbar-brand" style="color:white; padding-left: 20px" href="index.html">Platinum Eletronics</a>
+    <a id="i0" class="navbar-brand nav-list" style="color:white; padding-left: 20px" href="#">Platinum Eletronics</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,234 +32,252 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" style="color:white;" href="product_list_3.html">Tower Case</a>
+          <a id="i3" class="nav-link nav-list" style="color:white;" href="#">Tower Case</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:white;" href="product_list_4.html">Mother Board</a>
+          <a id="i4" class="nav-link nav-list" style="color:white;" href="#">Mother Board</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:white;" href="product_list_2.html">Core Processor Unit</a>
+          <a id="i2" class="nav-link nav-list" style="color:white;" href="#">Core Processor Unit</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:white;" href="product_list_1.html">Graphic Card</a>
+          <a id="i1" class="nav-link nav-list" style="color:white;" href="#">Graphic Card</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:white;" href="product_list_5.html">Power Supply</a>
+          <a id="i5" class="nav-link nav-list" style="color:white;" href="#">Power Supply</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:green;" href="">🛒Cart</a>
+          <a id="cart" class="nav-link" style="color:green;">🛒Cart</a>
         </li>
 
       </ul>
     </div>
   </nav>
 
-  <!-- Title -->
-  <section id="title">
-
-
-    <div class="container-fluid">
-      <div class="row title">
-        <div class="col-lg-6 padded ">
-
-          <h1>Upgrade Your Toaster Today!</h1>
-
-        </div>
-        <div class="col-lg-6 padded">
-          <img class="title-img sized" src="images/title-img.jpg" alt="pc-mockup">
-        </div>
-      </div>
-    </div>
+  <!-- THIS SECTION USE JAVASCRIPT AND ARRAY TO SHOW THE LIST OF ITEMS -->
+  <section id="list-items" class="main-page">
+    <div class="container-fluid list-5-items-script"></div>
   </section>
 
-  <!-- PRoduct Overviews -->
+  <!-- This section is for shopping cart drop down box -->
+  <div class="shopping-cart-box">
+    <div class="shopping-cart-header"></div>
+    <div class="shopping-cart-items"></div>
+    <div class="shopping-cart-footer"></div>
+  </div>
 
-  <section id="product-overview">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active carousel-item-size">
-          <div class="row fixed">
-            <div class="col-xl-8 padded ">
-              <div class="corousel-img-box">
-                <img class="product-img" src="images/product-1/1.jpg" alt="rtx-3080">
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div>
-                <h3>EVGA GeForce RTX 2060 XC Gaming 12GB GDDR6 Graphics Card</h3>
-              </div>
-              <div class="row">
-                <div class="col-xl">
-                  <h3>Price: $467.99</h3>
+  <div id="home-page">
+    <!-- Title -->
+    <section id="title">
+
+
+      <div class="container-fluid">
+        <div class="row title">
+          <div class="col-lg-6 padded ">
+
+            <h1>Upgrade Your Toaster Today!</h1>
+
+          </div>
+          <div class="col-lg-6 padded">
+            <img class="title-img sized" src="images/title-img.jpg" alt="pc-mockup">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRoduct Overviews -->
+
+    <section id="product-overview">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item-size">
+            <div class="row fixed">
+              <div class="col-xl-8 padded ">
+                <div class="corousel-img-box">
+                  <img class="product-img" src="images/product-1/1.jpg" alt="rtx-3080">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Brand</b> </h5>
+              <div class="col-xl-4">
+                <div>
+                  <h3>EVGA GeForce RTX 2060 XC Gaming 12GB GDDR6 Graphics Card</h3>
                 </div>
-                <div class="col-8">
-                  <h5>EVGA</h5>
+                <div class="row">
+                  <div class="col-xl">
+                    <h3>Price: $467.99</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Graphics Co processor</b></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Brand</b> </h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>EVGA</h5>
+                  </div>
                 </div>
-                <div class="col-8">
-                  <h5>NVIDIA GeForce RTX 2060</h5>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Graphics Co processor</b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>NVIDIA GeForce RTX 2060</h5>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Video Output Interface </b></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Video Output Interface </b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>DisplayPort, DVI, HDMI</h5>
+                  </div>
                 </div>
-                <div class="col-8">
-                  <h5>DisplayPort, DVI, HDMI</h5>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Graphics Processor</b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>RTX 3070</h5>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Graphics Processor</b></h5>
-                </div>
-                <div class="col-8">
-                  <h5>RTX 3070</h5>
-                </div>
-              </div>
-              <div class="row margin-top">
-                <div class="col">
-                  <button type="button" class="btn btn-primary">Add to Cart</button>
+                <div class="row margin-top">
+                  <div class="col">
+                    <button type="button" value="1" class="btn btn-primary shopping-cart">Add to Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xl-8 padded ">
+                <div class="corousel-img-box">
+                  <img class="product-img" src="images/product-2/1.jpg" alt="rtx-3080">
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div>
+                  <h3>EVGA GeForce RTX 2060 XC Gaming 12GB GDDR6 Graphics Card</h3>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h3>Price: $467.99</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Brand</b> </h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>EVGA</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Graphics Co processor</b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>NVIDIA GeForce RTX 2060</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Video Output Interface </b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>DisplayPort, DVI, HDMI</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <h5><b>Graphics Processor</b></h5>
+                  </div>
+                  <div class="col-8">
+                    <h5>RTX 3070</h5>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col">
+                    <button type="button" value="2" class="btn btn-primary shopping-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" type="button" href="#carouselExampleDark" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" type="button" href="#carouselExampleDark" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
-        <div class="carousel-item">
+      </div>
+    </section>
+
+    <section id="promotion">
+      <div class="container-fluid">
+        <h2 class="glow">FREE SAME-DAY SHIPPING!</h2>
+      </div>
+    </section>
+
+    <section id="today-deals">
+      <h2>Today's Best Deals</h2>
+      <div class="row padded">
+        <div class="col-xl-4 col-lg-6 best-deal-container-1">
+          <img class="best-deal-img-1" src="images/product-11/1.jpg" alt="i9-12900k">
+          <h4>Intel Core i9-12900K Desktop Processor</h4>
+          <h6 class="text-decoration-crossed">List Price: $707.50</h6>
+          <h6>Your Price: <b style="color:red;">$610.99</b></h6>
+          <button type="button" value="11" class="btn btn-primary shopping-cart">Add to Cart</button>
+        </div>
+        <div class="col-xl-4 col-lg-6">
           <div class="row">
-            <div class="col-xl-8 padded ">
-              <div class="corousel-img-box">
-                <img class="product-img" src="images/product-2/1.jpg" alt="rtx-3080">
-              </div>
+            <div class="col best-deal-container-2">
+              <img class="best-deal-img-2" src="images/product-43/1.jpg" alt="i9-12900k">
+              <h4>Gigabyte GP-P850GM 80 Plus Gold 850W Power Supply</h4>
+              <h6 class="text-decoration-crossed">List Price: $139.99</h6>
+              <h6>Your Price: <b style="color:red;">$79.99</b></h6>
+              <button type="button" value="43" class="btn btn-primary shopping-cart">Add to Cart</button>
             </div>
-            <div class="col-xl-4">
-              <div>
-                <h3>EVGA GeForce RTX 2060 XC Gaming 12GB GDDR6 Graphics Card</h3>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <h3>Price: $467.99</h3>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Brand</b> </h5>
-                </div>
-                <div class="col-8">
-                  <h5>EVGA</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Graphics Co processor</b></h5>
-                </div>
-                <div class="col-8">
-                  <h5>NVIDIA GeForce RTX 2060</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Video Output Interface </b></h5>
-                </div>
-                <div class="col-8">
-                  <h5>DisplayPort, DVI, HDMI</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <h5><b>Graphics Processor</b></h5>
-                </div>
-                <div class="col-8">
-                  <h5>RTX 3070</h5>
-                </div>
-              </div>
-              <div class="row margin-top">
-                <div class="col">
-                  <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
-                </div>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col best-deal-container-2">
+              <img class="best-deal-img-2" src="images/product-21/1.jpg" alt="i9-12900k">
+              <h4>Corsair 5000D Mid-Tower ATX PC Case </h4>
+              <h6 class="text-decoration-crossed">List Price:$174.99</h6>
+              <h6>Your Price: <b style="color:red;">$149.99</b></h6>
+              <button type="button" value="21" class="btn btn-primary shopping-cart">Add to Cart</button>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" type="button" href="#carouselExampleDark" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" type="button" href="#carouselExampleDark" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="promotion">
-    <div class="container-fluid">
-      <h2 class="glow">FREE SAME-DAY SHIPPING!</h2>
-    </div>
-  </section>
-
-  <section id="today-deals">
-    <h2>Today's Best Deals</h2>
-    <div class="row padded">
-      <div class="col-xl-4 col-lg-6 best-deal-container-1">
-        <img class="best-deal-img-1" src="images/product-11/1.jpg" alt="i9-12900k">
-        <h4>Intel Core i9-12900K Desktop Processor</h4>
-        <h6 class="text-decoration-crossed">List Price:	$707.50</h6>
-        <h6>Your Price:	<b style="color:red;">$610.99</b></h6>
-        <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
-      </div>
-      <div class="col-xl-4 col-lg-6">
-        <div class="row">
-          <div class="col best-deal-container-2">
-            <img class="best-deal-img-2" src="images/product-43/1.jpg" alt="i9-12900k">
-            <h4>Gigabyte GP-P850GM 80 Plus Gold 850W Power Supply</h4>
-            <h6 class="text-decoration-crossed">List Price:	$139.99</h6>
-            <h6>Your Price:	<b style="color:red;">$79.99</b></h6>
-            <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
+        <div class="col-xl-4 col-lg-12">
+          <div class="row">
+            <div class="col best-deal-container-2">
+              <img class="best-deal-img-2" src="images/product-32/1.jpg" alt="i9-12900k">
+              <h4>MSI MAG B550 TOMAHAWK Gaming Motherboard</h4>
+              <h6 class="text-decoration-crossed">List Price: $189.99</h6>
+              <h6>Your Price: <b style="color:red;">167.25</b></h6>
+              <button type="button" value="32" class="btn btn-primary shopping-cart">Add to Cart</button>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col best-deal-container-2">
-            <img class="best-deal-img-2" src="images/product-21/1.jpg" alt="i9-12900k">
-            <h4>Corsair 5000D Mid-Tower ATX PC Case </h4>
-            <h6 class="text-decoration-crossed">List Price:$174.99</h6>
-            <h6>Your Price:	<b style="color:red;">$149.99</b></h6>
-            <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
+          <div class="row">
+            <div class="col best-deal-container-2">
+              <img class="best-deal-img-2" src="images/product-9/1.jpg" alt="i9-12900k">
+              <h4>MSI Computer Video Graphic Cards GeForce GTX 1050 TI</h4>
+              <h6 class="text-decoration-crossed">List Price: $289.99</h6>
+              <h6>Your Price: <b style="color:red;">$239.00</b></h6>
+              <button type="button" value="9" class="btn btn-primary shopping-cart">Add to Cart</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-12">
-        <div class="row">
-          <div class="col best-deal-container-2">
-            <img class="best-deal-img-2" src="images/product-32/1.jpg" alt="i9-12900k">
-            <h4>MSI MAG B550 TOMAHAWK Gaming Motherboard</h4>
-            <h6 class="text-decoration-crossed">List Price:	$189.99</h6>
-            <h6>Your Price:	<b style="color:red;">167.25</b></h6>
-            <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col best-deal-container-2">
-            <img class="best-deal-img-2" src="images/product-9/1.jpg" alt="i9-12900k">
-            <h4>MSI Computer Video Graphic Cards GeForce GTX 1050 TI</h4>
-            <h6 class="text-decoration-crossed">List Price:	$289.99</h6>
-            <h6>Your Price:	<b style="color:red;">$239.00</b></h6>
-            <button type="button" class="btn btn-primary shopping-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/product_list_all.js"></script>
+  <!-- <script src="js/product_list_5.js"></script> -->
+  <script src="js/listing_script.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/hide_list.js"></script>
   <!-- Footer -->
 
   <footer id="footer">
