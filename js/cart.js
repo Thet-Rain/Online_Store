@@ -32,13 +32,13 @@ $( window ).on( "load", function() {
       //Update the cart
 
         var subtotal = 0;
-        var cart_item_string;
+        var cart_item_string = "";
         $('.shopping-cart-header').html("<h4>Items in Cart</h4><br>" +
           "<div class='row'>" +
-          "<div class='col-xl-3'><h5>Img</h5></div>" +
-          "<div class='col-xl-3'><h5>Item</h5></div>" +
-          "<div class='col-xl-3'><h5>Price</h5></div>"+
-          "<div class='col-xl-3'><h5>Qty</h5></div></div>");
+          "<div class='col-xl-3 cart-img'><h5>Img</h5></div>" +
+          "<div class='col-xl-3 col-xs-4'><h5>Item</h5></div>" +
+          "<div class='col-xl-3 col-xs-4'><h5>Price</h5></div>"+
+          "<div class='col-xl-3 col-xs-4'><h5>Qty</h5></div></div>");
 
         for (var k = 0; k < cart_total.length; k++) {
           var trimed_item_name = truncateString( cart_total[k][0].name,item_str_length );
@@ -47,17 +47,17 @@ $( window ).on( "load", function() {
           subtotal += item_price * cart_total[k][0].qty;
           cart_item_string += "<div class='row'>" +
             "<div class='col-xl-3'><img class='cart-img' src='"+ item_img_src +"'></div>" +
-            "<div class='col-xl-3'><h6>" + trimed_item_name + "</h6></div>" +
-            "<div class='col-xl-3'><h6>$" + item_price + "</h6></div>"+
-            "<div class='col-xl-3'><h6>" +  cart_total[k][0].qty + "</h6></div></div>";
+            "<div class='col-xl-3 col-sm-4'><h6>" + trimed_item_name + "</h6></div>" +
+            "<div class='col-xl-3 col-sm-4'><h6>$" + item_price + "</h6></div>"+
+            "<div class='col-xl-3 col-sm-4'><h6>" +  cart_total[k][0].qty + "</h6></div></div>";
 
         }
 
         $('.shopping-cart-items').html(cart_item_string);
         $('.shopping-cart-footer').html("<br>" +
           "<div class='row'>" +
-          "<div class='col-xl-6'><h4>Total: $"+ subtotal +"</h4></div>" +
-          "<div class='col-xl-6'><h4>*******</h4></div>");
+          "<div class='col-sm-6'><h4>Total: $"+ subtotal.toFixed(2) +"</h4></div>" +
+          "<div class='col-sm-6'><h4>*******</h4></div>");
 
 
 
@@ -81,13 +81,13 @@ $( window ).on( "load", function() {
        if (cart_total.length > 0)
        {
          var subtotal = 0;
-         var cart_item_string;
+         var cart_item_string = " ";
          $('.shopping-cart-header').html("<h4>Items in Cart</h4><br>" +
            "<div class='row'>" +
-           "<div class='col-xl-3'><h5>Img</h5></div>" +
-           "<div class='col-xl-3'><h5>Item</h5></div>" +
-           "<div class='col-xl-3'><h5>Price</h5></div>"+
-           "<div class='col-xl-3'><h5>Qty</h5></div></div>");
+           "<div class='col-xl-3 cart-img'><h5>Img</h5></div>" +
+           "<div class='col-xl-3 col-sm-4'><h5>Item</h5></div>" +
+           "<div class='col-xl-3 col-sm-4'><h5>Price</h5></div>"+
+           "<div class='col-xl-3 col-sm-4'><h5>Qty</h5></div></div>");
 
          for (var k = 0; k < cart_total.length; k++) {
            var trimed_item_name = truncateString( cart_total[k][0].name,item_str_length );
@@ -96,17 +96,17 @@ $( window ).on( "load", function() {
            subtotal += item_price;
            cart_item_string += "<div class='row'>" +
              "<div class='col-xl-3'><img class='cart-img' src='"+ item_img_src +"'></div>" +
-             "<div class='col-xl-3'><h6>" + trimed_item_name + "</h6></div>" +
-             "<div class='col-xl-3'><h6>$" + item_price + "</h6></div>"+
-             "<div class='col-xl-3'><h6>" +  cart_total[k][0].qty + "</h6></div></div>";
+             "<div class='col-xl-3 col-sm-4'><h6>" + trimed_item_name + "</h6></div>" +
+             "<div class='col-xl-3 col-sm-4'><h6>$" + item_price + "</h6></div>"+
+             "<div class='col-xl-3 col-sm-4'><h6>" +  cart_total[k][0].qty + "</h6></div></div>";
              console.log(cart_total[k][0].qty);
          }
 
          $('.shopping-cart-items').html(cart_item_string);
          $('.shopping-cart-footer').html("<br>" +
            "<div class='row'>" +
-           "<div class='col-xl-6'><h4>Total: $"+ subtotal +"</h4></div>" +
-           "<div class='col-xl-6'><h4>*******</h4></div>");
+           "<div class='col-sm-6'><h4>Total: $"+ subtotal.toFixed(2) +"</h4></div>" +
+           "<div class='col-sm-6'><h4>*******</h4></div>");
 
          console.log(cart_total);
        }
@@ -116,7 +116,7 @@ $( window ).on( "load", function() {
 
 
 //This is for Shopping cart box toggle script
-$("#cart").click(function() {
+$(".cart").click(function() {
 
   //toggle
   $(".shopping-cart-box").fadeToggle("fast");

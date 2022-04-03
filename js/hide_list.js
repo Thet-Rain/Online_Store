@@ -1,3 +1,6 @@
+
+//This script hide and show div according to the nav link you click.
+
 $('.nav-list').click(function(event)
 {
   var page = event.currentTarget.id;
@@ -13,3 +16,8 @@ $('.nav-list').click(function(event)
   }
 }
 );
+
+//This collapse the nav bar when you click the nav bar items inside
+$('.nav-link').on('click',function() {
+  $( "#navbarTogglerDemo02" ).removeClass( "show" );
+});

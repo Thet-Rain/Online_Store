@@ -100,9 +100,16 @@ p
     z-index: 99;
 }
 
+.cart-m
+{
+  display:none;
+}
+
 a:hover
 {
   font-size: 2rem;
+  cursor :grab;
+  color: yellow;
 }
 
 /*Product corousel section fdsfd*/
@@ -228,9 +235,9 @@ a:hover
   position:fixed;
   right: 0;
   top: 75px;
-  z-index: 99;
+  z-index: 10;
   overflow-y: scroll;
-  max-height: 75%;
+  max-height: 90%;
 }
 
 .shopping-cart-header
@@ -289,7 +296,8 @@ a:hover
 
   .shopping-cart-box
   {
-    visibility:hidden;
+    display:none;
+
   }
 
   .nav-link
@@ -300,8 +308,22 @@ a:hover
 
   .navbar-fixed-top
   {
-    max-height: 50%;
+    max-height: 70%;
     overflow-y: scroll;
+  }
+
+  .cart-img
+  {
+    display:none;
+  }
+
+  .cart-m
+  {
+    display:inline;
+  }
+  .cart-d
+  {
+    display: none;
   }
 }
 
@@ -322,4 +344,30 @@ a:hover
     position:relative;
   }
 
+}
+
+/* For phones screen size */
+@media (max-width : 768px)
+{
+  .navbar-brand
+  {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .nav-link
+  {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .navbar-fixed-top
+  {
+    max-height: 100%;
+  }
+
+  .shopping-cart-box
+  {
+    width: 100%;
+  }
 }
