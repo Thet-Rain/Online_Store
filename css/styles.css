@@ -370,4 +370,9 @@ a:hover
   {
     width: 100%;
   }
+
+  a:hover
+  {
+    font-size: 3rem;
+  }
 }

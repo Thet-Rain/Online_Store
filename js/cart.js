@@ -1,8 +1,8 @@
 
 var cart_total = [];    //object array for all items in cart
-
 var item_str_length = 15; //string lenght for name in cartl
 var isExistPosition = 0;
+var items_in_cart = 0;
 $('.shopping-cart-header').html("Your Cart is Empty!");
 // } else {
 //   $('.shopping-cart-header').html("<h4>Items in Cart</h4> <div class='row'><div class='col-xl-4'><h5>Name:</h5></div><div class='col-xl-4'><h5>Name:</h5></div><div class='col-xl-4'><h5>Name:</h5></div></div>");
@@ -12,6 +12,8 @@ $('.shopping-cart-header').html("Your Cart is Empty!");
 
 $( window ).on( "load", function() {
   $(document).on("click", ".shopping-cart" ,function () {
+    items_in_cart += 1;
+    $('.cart_counts').html("<b>(" + items_in_cart + ")</b>")
     var i = this.value;
     var isExist = false;
 
@@ -60,7 +62,6 @@ $( window ).on( "load", function() {
           "<div class='col-sm-6'><h4>*******</h4></div>");
 
 
-
     }
     else
     {
@@ -72,7 +73,6 @@ $( window ).on( "load", function() {
          "qty": 1,
          "index": product[i].index
        }];
-       console.log(cart);
 
        //Assign object to shopping cart object
        cart_total.push(cart);
@@ -99,7 +99,6 @@ $( window ).on( "load", function() {
              "<div class='col-xl-3 col-sm-4'><h6>" + trimed_item_name + "</h6></div>" +
              "<div class='col-xl-3 col-sm-4'><h6>$" + item_price + "</h6></div>"+
              "<div class='col-xl-3 col-sm-4'><h6>" +  cart_total[k][0].qty + "</h6></div></div>";
-             console.log(cart_total[k][0].qty);
          }
 
          $('.shopping-cart-items').html(cart_item_string);
@@ -107,8 +106,6 @@ $( window ).on( "load", function() {
            "<div class='row'>" +
            "<div class='col-sm-6'><h4>Total: $"+ subtotal.toFixed(2) +"</h4></div>" +
            "<div class='col-sm-6'><h4>*******</h4></div>");
-
-         console.log(cart_total);
        }
     }
   });
