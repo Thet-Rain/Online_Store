@@ -1,15 +1,9 @@
 
 
 //readCookie on load;
-if (document.cookie != 0)
-{
-  var cookieArray = readCookie();
-  loadCart(cookieArray);
-
-}
+loadCart(readCookie());
 
 //Write Cookie
-
 $(document).on("click", ".shopping-cart" ,function () {
 
 var index = this.value;
@@ -39,4 +33,11 @@ function readCookie()
     cookieArray2.push(cookieArray[i].split('='));
   }
   return cookieArray2;
+}
+
+//clear cookie
+function clearCookie()
+{
+  document.cookie = "";
+  loadCart(readCookie());
 }
