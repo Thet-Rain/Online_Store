@@ -23,7 +23,7 @@
   <!-- Nav Bar -->
   <nav class="navbar navbar-dark navbar-expand-xl navbar-fixed-top" style="background-color: #04293A;">
     <a id="i0" class="navbar-brand nav-list" style="color:white; padding-left: 20px" href="#">Platinum Eletronics</a>
-    <a class="nav-link cart-m cart" style="color:green;" >🛒Cart <span class="cart_counts"></span></a>
+    <a class="nav-link cart-m cart" style="color:green;">🛒Cart <span class="cart_counts"></span></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,22 +33,28 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a id="i3" class="nav-link nav-list"  href="#">Tower Case</a>
+          <a id="i3" class="nav-link nav-list" href="#">Case</a>
         </li>
         <li class="nav-item">
-          <a id="i4" class="nav-link nav-list"  href="#">Mother Board</a>
+          <a id="i4" class="nav-link nav-list" href="#">MotherBoard</a>
         </li>
         <li class="nav-item">
-          <a id="i2" class="nav-link nav-list" href="#">Core Processor Unit</a>
+          <a id="i2" class="nav-link nav-list" href="#">CPU</a>
         </li>
         <li class="nav-item">
-          <a id="i1" class="nav-link nav-list" href="#">Graphic Card</a>
+          <a id="i1" class="nav-link nav-list" href="#">GPU</a>
         </li>
         <li class="nav-item">
-          <a id="i5" class="nav-link nav-list" href="#">Power Supply</a>
+          <a id="i5" class="nav-link nav-list" href="#">PSU</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link cart-d cart" style="color:green;" >🛒Cart <span class="cart_counts"></span></a>
+          <a id="i6" class="nav-link nav-list" href="#">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a id="i7" class="nav-link nav-list" href="#">ReachUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cart-d cart" style="color:green;">🛒Cart <span class="cart_counts"></span></a>
         </li>
 
       </ul>
@@ -67,11 +73,65 @@
     <div class="shopping-cart-footer"></div>
   </div>
 
+  <!-- THIS SECTION Is About  Us -->
+  <section id="about-us" class="main-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>About Us</h1>
+          <h4>Platinum Eletronic was born in 2022 from a class room. We aim to give the best price and best services to all our customers.
+            We haven't been around for long but we hope to provide the need of our customers and thats all what we care about. We have all
+            the latest stocks of CPUs, GPUs and everything you need to upgrade your PC according to your budget and needs. </h4>
+        </div>
+        <div class="col-md-6">
+          <img src="images/platinum.png" alt="logo" style="width:100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THIS SECTION Is To Contact Us -->
+  <section id="contact-us" class="main-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container">
+            <form>
+              <h1>Contact US!</h1>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit" onclick="alert('thank you for your feedback! Our team will reach out to you soon! Have a nice day!')">
+
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.153363286592!2d-74.0095231036553!3d40.714640252691474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1649739810451!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <div id="home-page">
     <!-- Title -->
     <section id="title">
-
-
       <div class="container-fluid">
         <div class="row title">
           <div class="col-lg-6 padded ">
@@ -280,7 +340,7 @@
   <script src="js/hide_list.js"></script>
   <script src="js/cookie.js"></script>
 
-  </script>
+
   <!-- Footer -->
 
   <footer id="footer">

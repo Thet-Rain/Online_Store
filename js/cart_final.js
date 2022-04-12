@@ -8,6 +8,8 @@ function loadCart(cookieArray)
   $('.shopping-cart-header').html("Your Cart is Empty!");
   $('.shopping-cart-items').html("");
   $('.shopping-cart-footer').html("");
+  $('.cart_counts').html("");
+  $('.shopping-cart-box').hide();
   }
 
   else
@@ -60,7 +62,7 @@ function loadCart(cookieArray)
         "<div class='col-xl-3'><img class='cart-img' src='" + item_img_src + "'></div>" +
         "<div class='col-xl-3 col-sm-4'><h6>" + trimed_item_name + "</h6></div>" +
         "<div class='col-xl-3 col-sm-4'><h6>$" + item_price + "</h6></div>" +
-        "<div class='col-xl-3 col-sm-4'><h6>" + cart[i][0].qty + "</h6></div></div>";
+        "<div class='col-xl-3 col-sm-4'><h6><button class='span_qty btn' onclick='editCookie("+ cart[i][0].index +" , true )' >+</button>" + cart[i][0].qty + "<button class='span_qty btn'onclick='editCookie("+ cart[i][0].index +" , false )' >-</button></h6></div></div>";
     }
 
     //Inserting the html into shopping-cart-item
@@ -69,6 +71,8 @@ function loadCart(cookieArray)
       "<div class='row'>" +
       "<div class='col-sm-6'><h4>Total: $" + subtotal.toFixed(2) + "</h4></div>" +
       "<div class='col-sm-6'><button type='button' value='9' class='btn btn-primary' onclick='clearCookie()'>Clear The Cart</button></div>");
+
+      $('.shopping-cart-box').show();
   }
 
 }
